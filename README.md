@@ -1,3 +1,6 @@
+![Link Name](https://th.bing.com/th/id/OIG3.7FdWIq65gKPpyX3G6irw?w=1024&h=1024&rs=1&pid=ImgDetMain)
+
+
 This Python script automates the creation of Gophish campaigns by reading email templates and landing page configurations from files. It uses the Gophish API to handle various components of phishing campaigns.
 Features
 
