@@ -1,0 +1,28 @@
+{
+  "api_key": "YOUR_API_KEY",
+  "host": "https://localhost:4444",
+  "group": {
+    "name": "Test Group",
+    "targets": [
+      {"first_name": "John", "last_name": "Doe", "email": "john.doe@example.com"}
+    ]
+  },
+  "smtp": {
+    "name": "Test SMTP Profile",
+    "host": "smtp.example.com:587",
+    "from_address": "sender@example.com",
+    "username": "smtpuser",
+    "password": "smtppassword",
+    "ignore_cert_errors": true
+  },
+  "landing_page": {
+    "name": "Test Landing Page",
+    "html": "BASE64_ENCODED_HTML_CONTENT",
+    "is_base64": true,
+    "capture_credentials": true,
+    "capture_passwords": true
+  },
+  "template": {
+    "is_base64": true
+  }
+}
