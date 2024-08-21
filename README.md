@@ -108,7 +108,7 @@ This project automates the creation and management of phishing campaigns using t
     HTML: <Base64 or plain HTML content>
 2 Run the script:
 
-    python configauto.py
+    python AutoGoPhish.py
 
 The script will:
 
