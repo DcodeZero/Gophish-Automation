@@ -47,8 +47,8 @@ This project automates the creation and management of phishing campaigns using t
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/PhishingCampaign.git
-   cd PhishingCampaign
+   git clone https://github.com/DcodeZero/Gophish-Automation.git
+   cd Gophish-Automation
    ```
 2. Install the required Python packages:
    ``` bash
