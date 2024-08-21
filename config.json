@@ -1,28 +1,45 @@
 {
-  "api_key": "YOUR_API_KEY",
-  "host": "https://localhost:4444",
-  "group": {
-    "name": "Test Group",
-    "targets": [
-      {"first_name": "John", "last_name": "Doe", "email": "john.doe@example.com"}
-    ]
-  },
-  "smtp": {
-    "name": "Test SMTP Profile",
-    "host": "smtp.example.com:587",
-    "from_address": "sender@example.com",
-    "username": "smtpuser",
-    "password": "smtppassword",
-    "ignore_cert_errors": true
-  },
-  "landing_page": {
-    "name": "Test Landing Page",
-    "html": "BASE64_ENCODED_HTML_CONTENT",
-    "is_base64": true,
-    "capture_credentials": true,
-    "capture_passwords": true
-  },
-  "template": {
-    "is_base64": true
-  }
+    "api_key": "your_api_key",
+    "host": "https://your_gophish_server",
+    "recipient_email": "recipient@example.com",
+    "smtp_profiles": [
+        {
+            "name": "SMTP1",
+            "host": "smtp1.example.com",
+            "from_address": "noreply1@example.com",
+            "username": "user1",
+            "password": "pass1",
+            "ignore_cert_errors": true,
+            "headers": [
+                {"key": "X-Header", "value": "Foo Bar"}
+            ]
+        },
+        {
+            "name": "SMTP2",
+            "host": "smtp2.example.com",
+            "from_address": "noreply2@example.com",
+            "username": "user2",
+            "password": "pass2",
+            "ignore_cert_errors": true,
+            "headers": [
+                {"key": "X-Header", "value": "Baz Quux"}
+            ]
+        }
+    ],
+    "group": {
+        "name": "Test Group",
+        "targets": [
+            {"email": "target1@example.com", "first_name": "John", "last_name": "Doe"}
+        ]
+    },
+    "landing_page": {
+        "name": "Test Landing Page",
+        "html": "your_landing_page_content_here",
+        "is_base64": false,
+        "capture_credentials": true,
+        "capture_passwords": true
+    },
+    "template": {
+        "is_base64": false
+    }
 }
